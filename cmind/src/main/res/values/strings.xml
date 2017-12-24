@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Cmindtest</string>
+    <string name="error_occurred">Error occurred: %s</string>
+    <string name="no_network">No internet connection!</string>
+</resources>

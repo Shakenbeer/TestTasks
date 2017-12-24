@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TestTasks.iml" filepath="$PROJECT_DIR$/TestTasks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aFileChooser/aFileChooser.iml" filepath="$PROJECT_DIR$/aFileChooser/aFileChooser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cmind/cmind.iml" filepath="$PROJECT_DIR$/cmind/cmind.iml" />
+      <module fileurl="file://$PROJECT_DIR$/idt/idt.iml" filepath="$PROJECT_DIR$/idt/idt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ring/ring.iml" filepath="$PROJECT_DIR$/ring/ring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/softermii/softermii.iml" filepath="$PROJECT_DIR$/softermii/softermii.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wolt/wolt.iml" filepath="$PROJECT_DIR$/wolt/wolt.iml" />
+    </modules>
+  </component>
+</project>

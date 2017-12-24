@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">IDTTest</string>
+    <string name="image_url">Image URL</string>
+    <string name="download">Download</string>
+    <string name="invalid_url">Not a valid URL</string>
+    <string name="process_cancelled">Process cancelled</string>
+    <string name="no_network">No internet connection.</string>
+    <string name="downloading">Downloading image…</string>
+    <string name="rotating">Rotating image…</string>
+    <string name="undefined_error">Undefined error.</string>
+</resources>

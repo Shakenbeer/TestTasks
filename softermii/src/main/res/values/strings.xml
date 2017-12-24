@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Best Salmon</string>
+
+    <!-- facebook -->
+    <string name="facebook_app_id">255517231553452</string>
+    <string name="fb_login_protocol_scheme">fb255517231553452</string>
+
+
+    <string name="facebook_login_canceled">Facebook login canceled.</string>
+    <string name="facebook_login_error">Facebook login error: %s</string>
+    <string name="ingredients">Ingredients: </string>
+    <string name="see_original_post">See original post</string>
+    <string name="logout">Logout</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="got_it">Got it</string>
+    <string name="transition_recipe">recipe</string>
+    <string name="logo">Logo</string>
+
+</resources>
