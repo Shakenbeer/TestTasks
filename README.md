@@ -30,7 +30,7 @@ Test tasks, that were implemented as part of interview flows for different compa
     - A details info screen on tap on list's elements from the previous screen (with transition API for SDK >= 21)
     - UI should be implemented with standard compononents with honor to Material quidelines 
     
-  * **Wolt**
+* **Wolt**
     
     Task is to write a program that takes JSON-formatted opening hours of a restaurant as an input and outputs hours in human readable format.
     
