@@ -122,7 +122,7 @@ public class RedditRepositoryTest {
     }
 
     @Test
-    public void ifNetworkIsAvailableThenLoadFromDb() {
+    public void ifNetworkIsUnavailableThenLoadFromDb() {
         List<ChildData> children = new ArrayList<>(1);
         ChildData e = new ChildData();
         e.setId("Some_id");
