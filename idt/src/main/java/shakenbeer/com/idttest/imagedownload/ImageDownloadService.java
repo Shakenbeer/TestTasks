@@ -82,7 +82,15 @@ public class ImageDownloadService extends IntentService {
                 }
                 out.write(bytes, 0, count);
             }
-            bitmap = BitmapFactory.decodeByteArray(out.toByteArray(), 0, out.size());
+
+            BitmapFactory.Options options = new BitmapFactory.Options();
+            options.inJustDecodeBounds = true;
+            BitmapFactory.decodeByteArray(out.toByteArray(), 0, out.size(), options);
+
+            options.inSampleSize = calculateInSampleSize(options, 1024, 1024);
+            options.inJustDecodeBounds = false;
+
+            bitmap = BitmapFactory.decodeByteArray(out.toByteArray(), 0, out.size(), options);
             if (bitmap == null) {
                 sendError("Downloaded file could not be decoded as bitmap.");
             } else {
@@ -159,5 +167,28 @@ public class ImageDownloadService extends IntentService {
         intent.putExtra(SUCCESS_EXTRA, false);
         intent.putExtra(MESSAGE_EXTRA, error);
         LocalBroadcastManager.getInstance(this).sendBroadcast(intent);
+    }
+
+    private int calculateInSampleSize(
+            BitmapFactory.Options options, int reqWidth, int reqHeight) {
+        // Raw height and width of image
+        final int height = options.outHeight;
+        final int width = options.outWidth;
+        int inSampleSize = 1;
+
+        if (height > reqHeight || width > reqWidth) {
+
+            final int halfHeight = height / 2;
+            final int halfWidth = width / 2;
+
+            // Calculate the largest inSampleSize value that is a power of 2 and keeps both
+            // height and width larger than the requested height and width.
+            while ((halfHeight / inSampleSize) >= reqHeight
+                    && (halfWidth / inSampleSize) >= reqWidth) {
+                inSampleSize *= 2;
+            }
+        }
+
+        return inSampleSize;
     }
 }
